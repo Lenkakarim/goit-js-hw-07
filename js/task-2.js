@@ -34,8 +34,8 @@ images.forEach((image) => {
   li.append(img);
   ulElement.append(li);
 });
-// =================== Стилі ============================
 
+// =================== Стилі ============================
 ulElement.style.display = "flex";
 ulElement.style.flexWrap = "wrap";
 ulElement.style.gap = "48px 24px";

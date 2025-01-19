@@ -130,3 +130,55 @@ body {
   letter-spacing: 0.04em;
   color: #fff;
 }
+
+/* ============================= task - 6 =============================== */
+.controls-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 32px;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+  margin-bottom: 16px;
+}
+
+.controls-container > input {
+  border-radius: 8px;
+  padding: 8px 72px;
+  margin-bottom: 0;
+  background-color: #f6f6fe;
+}
+
+.boxes-container {
+  padding: 32px;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+  display: flex;
+  gap: 44px;
+  flex-wrap: wrap;
+}
+
+.create-btn {
+  background: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+}
+
+.destroy-btn {
+  background-color: #ff4e4e;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
