@@ -22,7 +22,7 @@ const images = [
   {
     url: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
     alt: "Lighthouse Coast Sea",
-  }
+  },
 ];
 
 const ulElement = document.querySelector(".gallery");
@@ -34,3 +34,22 @@ images.forEach((image) => {
   li.append(img);
   ulElement.append(li);
 });
+// =================== Стилі ============================
+
+ulElement.style.display = "flex";
+ulElement.style.flexWrap = "wrap";
+ulElement.style.gap = "48px 24px";
+ulElement.style.listStyle = "none";
+ulElement.style.justifyContent = "center";
+
+const liElements = document.querySelectorAll(".gallery li");
+liElements.forEach((li) => {
+  li.style.flex = "0 1 calc(33.33% - 24px)";
+});
+
+document
+  .querySelectorAll(".gallery li img")
+  .forEach((img) => {
+    img.style.width = "100%";
+    img.style.height = "auto";
+  });
